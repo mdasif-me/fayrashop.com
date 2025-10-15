@@ -1,7 +1,12 @@
+import Banner from '@/components/layouts/view/banner'
 
 const Home = () => {
   return (
-    <div>Home | This is a home page | My name is asif</div>
+    <div>
+      <div className="h-screen">
+        <div className="h-[200vh]"></div>
+      </div>
+    </div>
   )
 }
 

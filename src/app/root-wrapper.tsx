@@ -2,13 +2,7 @@
 
 import { ThemeProvider } from '../components/theme-provider'
 
-export const RootWrapper = ({
-  children,
-  locale,
-}: {
-  children: React.ReactNode
-  locale: string
-}) => {
+export const RootWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>

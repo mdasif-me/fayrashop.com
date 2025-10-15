@@ -82,7 +82,7 @@ const categories = [
 export default function AppNavbar(props: NavbarProps) {
   return (
     <NavbarProvider>
-      <Navbar {...props} intent="default" className="shadow-sm">
+      <Navbar {...props} intent="default">
         <NavbarStart>
           <Link
             className="flex items-center gap-x-2 font-medium"

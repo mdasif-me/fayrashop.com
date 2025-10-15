@@ -1,0 +1,58 @@
+{
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\$\\$([^)]*)\\$\\$", "[\"'`]([^\"'`]*)[\"'`]"],
+    ["cx\\$\\$([^)]*)\\$\\$", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["cn\\$\\$([^)]*)\\$\\$", "(?:'|\"|`)([^'\"`]*)"]
+  ],
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/coverage": true,
+    "**/playwright-report": true,
+    "**/test-results": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true
+  },
+  "eslint.workingDirectories": ["./"],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json, global.d.ts",
+    "vite.config.*": "jsconfig*, vite.config.*, cypress.config.*, playwright.config.*",
+    " tailwind.config.*": "tailwind.config.*, postcss.config.*, components.json",
+    "Dockerfile": "docker-compose.*, .dockerignore, Dockerfile.*",
+    "vite.config.ts": "auto-imports.d.ts, .eslintrc-auto-import.json ",
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, eslint.config*, .prettier*, prettier*, .editorconfig"
+  },
+  "kiroAgent.configureMCP": "Disabled"
+}

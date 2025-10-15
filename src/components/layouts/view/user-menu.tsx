@@ -23,7 +23,6 @@ import {
   MenuSubmenu,
   MenuTrigger,
 } from '@/components/ui/menu'
-import { ThemeToggle } from '../../theme-toggle'
 import { useTheme } from 'next-themes'
 
 export function UserMenu() {

@@ -1,7 +1,24 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  // standalone output for Docker
+  // output: 'standalone',
 
-export default nextConfig;
+  experimental: {
+    typedRoutes: true,
+  },
+
+  eslint: {
+    ignoreDuringBuilds: process.env.NODE_ENV === 'production',
+  },
+
+  typescript: {
+    ignoreBuildErrors: process.env.NODE_ENV === 'production',
+  },
+
+  images: {
+    remotePatterns: [],
+  },
+}
+
+export default nextConfig

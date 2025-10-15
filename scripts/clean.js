@@ -10,15 +10,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const foldersToClean = [
-  '.next',
-  'dist',
-  'build',
-  'coverage',
-  'storybook-static',
-  'playwright-report',
-  'test-results',
-]
+const foldersToClean = ['.next', 'dist', 'build', 'coverage', 'playwright-report', 'test-results']
 
 const filesToClean = ['.tsbuildinfo']
 

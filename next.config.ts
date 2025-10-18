@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
   },
 
   images: {
+    domains: ['placehold.co'],
     remotePatterns: [],
   },
 }

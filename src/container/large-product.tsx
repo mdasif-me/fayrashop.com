@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Macbook() {
+export default function LargeProduct() {
   return (
     <section className="py-10">
       <div className="flex h-auto w-full flex-col items-center justify-around gap-5 rounded-xl bg-orange-100 shadow-sm lg:flex-row lg:gap-0">

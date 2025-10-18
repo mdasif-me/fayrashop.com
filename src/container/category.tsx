@@ -24,7 +24,12 @@ const categories = [
 ]
 
 export default function Category() {
-  const plugin = React.useRef(Autoplay({ delay: 2500, stopOnInteraction: false }))
+  const plugin = React.useRef(
+    Autoplay({
+      delay: 2500,
+      stopOnInteraction: false,
+    })
+  )
 
   return (
     <section className="container mx-auto px-4 py-10">
@@ -34,6 +39,12 @@ export default function Category() {
 
       <div className="relative w-full">
         <Carousel
+          opts={{
+            align: 'start',
+            skipSnaps: false,
+            loop: true,
+            slidesToScroll: 1,
+          }}
           plugins={[plugin.current]}
           className="w-full"
           onMouseEnter={plugin.current.stop}
@@ -41,11 +52,8 @@ export default function Category() {
         >
           <CarouselContent>
             {categories.map((category, index) => (
-              <CarouselItem
-                key={index}
-                className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
-              >
-                <Card className="border py-0 transition-all duration-300 hover:shadow-md">
+              <CarouselItem key={index} className="basis-1/2 md:basis-1/4 lg:basis-1/6">
+                <Card className="border transition-all duration-300">
                   <CardContent className="flex flex-col items-center justify-between p-4">
                     <div className="relative flex h-36 w-full items-center justify-center sm:h-40 md:h-44 lg:h-48">
                       <Image
@@ -62,7 +70,6 @@ export default function Category() {
             ))}
           </CarouselContent>
 
-          {/* Navigation Buttons — positioned over cards */}
           <CarouselPrevious className="bg-primary absolute top-1/2 -left-4 z-10 -translate-y-1/2 rounded-full" />
           <CarouselNext className="bg-primary absolute top-1/2 -right-4 z-10 -translate-y-1/2 rounded-full" />
         </Carousel>

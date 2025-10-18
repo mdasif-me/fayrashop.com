@@ -54,10 +54,6 @@ export default function PromotionCard() {
             className="object-contain sm:w-36 md:w-44 lg:w-60"
           />
         </div>
-
-        <span className="absolute top-4 right-4 rounded-full bg-sky-500 px-3 py-1 text-sm font-semibold text-white">
-          $590
-        </span>
       </div>
     </section>
   )

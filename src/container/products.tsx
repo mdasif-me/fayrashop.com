@@ -13,13 +13,13 @@ const products = [
     title: 'Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear',
     price: '$2,300',
     status: 'SOLD OUT',
-    image: 'https://placehold.co/408x368.png',
+    image: 'https://placehold.co/500x368.png',
   },
   {
     id: 2,
     title: 'Simple Mobile 4G LTE Prepaid Smartphone',
     price: '$220',
-    image: 'https://placehold.co/408x368.png',
+    image: 'https://placehold.co/500x368.png',
   },
   {
     id: 3,
@@ -27,33 +27,33 @@ const products = [
     price: '$1,50',
     oldPrice: '$865',
     discount: '19% OFF',
-    image: 'https://placehold.co/408x368.png',
+    image: 'https://placehold.co/500x368.png',
   },
   {
     id: 4,
     title: 'Sony DSCHX8 High Zoom Point & Shoot Camera',
     price: '$1,200',
-    image: 'https://placehold.co/408x368.png',
+    image: 'https://placehold.co/500x368.png',
   },
   {
     id: 5,
     title: 'Dell Optiplex 7000x7480 All-in-One Computer Monitor',
     price: '$299',
-    image: 'https://placehold.co/408x368.png',
+    image: 'https://placehold.co/500x368.png',
   },
   {
     id: 6,
     title: 'Portable Wshing Machine, 11lbs capacity Model 18NMF1AM',
     price: '$70',
     oldPrice: '$865.99',
-    image: 'https://placehold.co/408x368.png',
+    image: 'https://placehold.co/500x368.png',
   },
   {
     id: 7,
     title: '2-Barrel Carburetor Carb 2100 Engine Increase Horsepower',
     price: '$160',
     tag: 'HOT',
-    image: 'https://placehold.co/408x368.png',
+    image: 'https://placehold.co/500x368.png',
   },
   {
     id: 8,
@@ -61,14 +61,14 @@ const products = [
     price: '$250',
     oldPrice: '$360',
     discount: '32% OFF',
-    image: 'https://placehold.co/408x368.png',
+    image: 'https://placehold.co/500x368.png',
   },
 ]
 
 export default function Products() {
   return (
     <section className="py-10">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 lg:px-0">
         <div className="flex justify-between pb-6">
           <article className="flex items-center gap-3">
             <h1 className="text-2xl font-semibold">Best Deals</h1>
@@ -122,16 +122,16 @@ export default function Products() {
               </p>
 
               <div className="mt-5 flex items-center gap-2">
-                <button className="rounded-xs border p-3">
+                <Button className="rounded-xs border p-3">
                   <Heart className="h-5 w-5" />
-                </button>
+                </Button>
                 <button className="bg-primary flex flex-1 items-center justify-center gap-2 rounded-xs py-3 text-sm font-normal text-white">
                   <ShoppingCart className="h-5 w-5" />
                   ADD TO CARD
                 </button>
-                <button className="rounded-xs border p-3">
+                <Button className="rounded-xs border p-3">
                   <Eye className="h-5 w-5" />
-                </button>
+                </Button>
               </div>
             </CardContent>
           </Card>
@@ -143,7 +143,6 @@ export default function Products() {
                 className="group flex flex-col justify-between rounded-none border p-0 shadow-none"
               >
                 <CardContent className="flex flex-grow flex-col p-3">
-                  {/* Image wrapper */}
                   <div className="relative flex h-52 w-full items-center justify-center">
                     <Image
                       src={item.image}
@@ -152,7 +151,6 @@ export default function Products() {
                       className="object-contain transition-transform duration-300 group-hover:scale-105"
                     />
 
-                    {/* Top badges */}
                     {item.status && (
                       <Badge className="absolute top-2 left-2 bg-gray-700 text-white">
                         {item.status}
@@ -169,24 +167,21 @@ export default function Products() {
                       </Badge>
                     )}
 
-                    {/* Hover icons – only visible on lg and above */}
                     <div className="absolute inset-0 hidden items-center justify-center gap-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100 lg:flex">
-                      <button className="bg-primary rounded-full p-2 text-white shadow">
+                      <Button className="bg-primary rounded-full p-2 text-white shadow">
                         <Heart className="h-4 w-4" />
-                      </button>
-                      <button className="bg-primary rounded-full p-2 text-white shadow">
+                      </Button>
+                      <Button className="bg-primary rounded-full p-2 text-white shadow">
                         <ShoppingCart className="h-4 w-4" />
-                      </button>
-                      <button className="bg-primary rounded-full p-2 text-white shadow">
+                      </Button>
+                      <Button className="bg-primary rounded-full p-2 text-white shadow">
                         <Eye className="h-4 w-4" />
-                      </button>
+                      </Button>
                     </div>
                   </div>
 
-                  {/* Product title */}
                   <p className="mt-3 line-clamp-2 text-sm">{item.title}</p>
 
-                  {/* Price section (always bottom) */}
                   <div className="mt-auto py-2">
                     <span className="font-semibold">{item.price}</span>
                     {item.oldPrice && (
@@ -196,18 +191,17 @@ export default function Products() {
                     )}
                   </div>
 
-                  {/* Action buttons — visible only on sm/md */}
                   <div className="mt-5 flex items-center gap-2 lg:hidden">
-                    <button className="rounded-xs border p-3">
+                    <Button className="rounded-xs border p-3">
                       <Heart className="h-5 w-5" />
-                    </button>
+                    </Button>
                     <button className="bg-primary flex flex-1 items-center justify-center gap-2 rounded-xs py-3 text-sm font-normal text-white">
                       <ShoppingCart className="h-5 w-5" />
                       ADD TO CART
                     </button>
-                    <button className="rounded-xs border p-3">
+                    <Button className="rounded-xs border p-3">
                       <Eye className="h-5 w-5" />
-                    </button>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>

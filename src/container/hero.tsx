@@ -84,7 +84,7 @@ export default function Hero(): React.ReactElement {
                       </div>
 
                       <div className="relative flex flex-1 items-center justify-end">
-                        <div className="absolute top-0 right-0 rounded-full border-4 bg-sky-500 px-2 py-3.5 text-lg font-semibold lg:px-5 lg:py-6">
+                        <div className="absolute top-0 right-0 rounded-full border-4 bg-sky-500 px-2 py-3.5 text-lg font-semibold text-white lg:px-5 lg:py-6">
                           {slide.price}
                         </div>
                         <Image
@@ -99,11 +99,12 @@ export default function Hero(): React.ReactElement {
 
                     <div className="my-6 flex justify-center space-x-2 lg:my-5.5 lg:justify-start lg:pt-0">
                       {Array.from({ length: count }).map((_, index) => (
-                        <button
+                        <Button
+                          size="dot"
                           key={index}
                           onClick={() => api?.scrollTo(index)}
-                          className={`h-2 w-2 rounded-full transition-all ${
-                            current === index ? 'bg-primary w-2' : 'bg-gray-300'
+                          className={`!h-2 !w-2 rounded-full transition-all ${
+                            current === index ? 'bg-primary' : 'bg-gray-300'
                           }`}
                         />
                       ))}

@@ -32,6 +32,11 @@ const buttonStyles = tv({
         'inset-ring-transparent [--btn-bg:transparent] [--btn-icon:var(--color-muted-fg)] [--btn-outline:var(--color-ring)] [--btn-overlay:var(--color-muted)] [--btn-ring:var(--color-ring)]/20',
     },
     size: {
+      dot: [
+        'min-h-2 gap-x-1 text-sm sm:min-h-2 sm:text-xs/4',
+        '*:data-[slot=icon]:size-0.5 sm:*:data-[slot=icon]:size-0.5',
+        '*:data-[slot=loader]:size-0.5 sm:*:data-[slot=loader]:size-0.5',
+      ],
       xs: [
         'min-h-7.5 gap-x-1 px-2.5 py-1.5 text-sm sm:min-h-7 sm:px-2 sm:py-[--spacing(1.4)] sm:text-xs/4',
         '*:data-[slot=icon]:size-3.5 sm:*:data-[slot=icon]:size-3',

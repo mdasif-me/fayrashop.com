@@ -19,7 +19,7 @@ export default function LargeProduct() {
         <div className="relative inline-block">
           <Image
             src="https://placehold.co/536x424.png"
-            alt="Apple HomePod Mini"
+            alt="Macbook Pro"
             width={536}
             height={424}
             className="w-full object-contain"

@@ -21,7 +21,7 @@ export default function PromotionCard() {
         <div className="relative">
           <Image
             src="https://placehold.co/200x200.png"
-            alt="Apple HomePod Mini"
+            alt="Xiaomi Mi 11 Ultra"
             width={200}
             height={200}
             className="object-contain sm:w-36 md:w-44 lg:w-60"
@@ -54,10 +54,6 @@ export default function PromotionCard() {
             className="object-contain sm:w-36 md:w-44 lg:w-60"
           />
         </div>
-
-        <span className="absolute top-4 right-4 rounded-full bg-sky-500 px-3 py-1 text-sm font-semibold text-white">
-          $590
-        </span>
       </div>
     </section>
   )

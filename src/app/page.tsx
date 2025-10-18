@@ -2,6 +2,7 @@ import {
   Accessories,
   Hero,
   Macbook,
+  Overall,
   Products,
   PromotionCard,
   PuturesProduct,
@@ -20,6 +21,7 @@ const Home = () => {
       <PromotionCard />
       <Accessories />
       <Macbook />
+      <Overall />
     </div>
   )
 }

@@ -143,7 +143,6 @@ export default function Products() {
                 className="group flex flex-col justify-between rounded-none border p-0 shadow-none"
               >
                 <CardContent className="flex flex-grow flex-col p-3">
-                  {/* Image wrapper */}
                   <div className="relative flex h-52 w-full items-center justify-center">
                     <Image
                       src={item.image}
@@ -152,7 +151,6 @@ export default function Products() {
                       className="object-contain transition-transform duration-300 group-hover:scale-105"
                     />
 
-                    {/* Top badges */}
                     {item.status && (
                       <Badge className="absolute top-2 left-2 bg-gray-700 text-white">
                         {item.status}
@@ -169,7 +167,6 @@ export default function Products() {
                       </Badge>
                     )}
 
-                    {/* Hover icons – only visible on lg and above */}
                     <div className="absolute inset-0 hidden items-center justify-center gap-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100 lg:flex">
                       <Button className="bg-primary rounded-full p-2 text-white shadow">
                         <Heart className="h-4 w-4" />
@@ -183,10 +180,8 @@ export default function Products() {
                     </div>
                   </div>
 
-                  {/* Product title */}
                   <p className="mt-3 line-clamp-2 text-sm">{item.title}</p>
 
-                  {/* Price section (always bottom) */}
                   <div className="mt-auto py-2">
                     <span className="font-semibold">{item.price}</span>
                     {item.oldPrice && (
@@ -196,7 +191,6 @@ export default function Products() {
                     )}
                   </div>
 
-                  {/* Action buttons — visible only on sm/md */}
                   <div className="mt-5 flex items-center gap-2 lg:hidden">
                     <Button className="rounded-xs border p-3">
                       <Heart className="h-5 w-5" />

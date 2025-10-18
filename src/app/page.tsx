@@ -1,4 +1,12 @@
-import { Accessories, Hero, Products, PromotionCard, PuturesProduct, Service } from '@/container'
+import {
+  Accessories,
+  Hero,
+  Macbook,
+  Products,
+  PromotionCard,
+  PuturesProduct,
+  Service,
+} from '@/container'
 import Category from '../container/category'
 
 const Home = () => {
@@ -11,6 +19,7 @@ const Home = () => {
       <PuturesProduct />
       <PromotionCard />
       <Accessories />
+      <Macbook />
     </div>
   )
 }

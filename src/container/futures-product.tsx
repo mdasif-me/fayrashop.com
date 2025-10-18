@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Heart, ShoppingCart, Eye, ArrowRight, Star } from 'lucide-react'
-import Timer from '../components/ui/timer'
 import { Button } from 'react-aria-components'
 
 const products = [
@@ -78,7 +77,6 @@ export default function PuturesProduct() {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <aside className="col-span-1 lg:col-span-3">
             <div className="relative flex h-full flex-col justify-between overflow-hidden rounded shadow">
-              {/* === Top offer section === */}
               <div className="bg-amber-200 p-6 text-center text-black">
                 <div className="text-sm font-medium uppercase">Computer & Accessories</div>
                 <h3 className="mt-2 text-4xl font-semibold">32% Discount</h3>
@@ -97,7 +95,6 @@ export default function PuturesProduct() {
                 </button>
               </div>
 
-              {/* === Responsive Bottom Image === */}
               <div className="relative flex w-full items-center justify-center">
                 <Image
                   src="https://placehold.co/428x627.png"

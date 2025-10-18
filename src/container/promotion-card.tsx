@@ -4,7 +4,6 @@ import React from 'react'
 export default function PromotionCard() {
   return (
     <section className="container mx-auto grid gap-6 py-10 md:grid-cols-2">
-      {/* Apple HomePod Mini Card */}
       <div className="flex flex-col items-center justify-between gap-5 rounded-xl p-11 shadow-sm md:flex-row lg:gap-0">
         <div className="max-w-2xs flex-1 text-center lg:text-left">
           <span className="inline-block rounded bg-blue-400 px-2 py-1 text-xs font-semibold text-white uppercase">
@@ -30,7 +29,6 @@ export default function PromotionCard() {
         </div>
       </div>
 
-      {/* Xiaomi Mi 11 Ultra Card */}
       <div className="flex flex-col items-center justify-between gap-5 rounded-xl bg-black p-11 text-white shadow-sm md:flex-row lg:gap-0">
         <div className="max-w-2xs flex-1 text-center lg:text-left">
           <span className="inline-block rounded bg-yellow-400 px-2 py-1 text-xs font-semibold text-black uppercase">

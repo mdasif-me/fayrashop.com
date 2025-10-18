@@ -84,7 +84,7 @@ export default function Hero(): React.ReactElement {
                       </div>
 
                       <div className="relative flex flex-1 items-center justify-end">
-                        <div className="absolute top-0 right-0 rounded-full border-4 bg-sky-500 px-2 py-3.5 text-lg font-semibold lg:px-5 lg:py-6">
+                        <div className="absolute top-0 right-0 rounded-full border-4 bg-sky-500 px-2 py-3.5 text-lg font-semibold text-white lg:px-5 lg:py-6">
                           {slide.price}
                         </div>
                         <Image

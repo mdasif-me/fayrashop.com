@@ -91,7 +91,7 @@ export default function Products() {
                   alt="Xbox Series S"
                   width={300}
                   height={300}
-                  className="object-contain"
+                  className="max-w-48 object-contain lg:max-w-sm"
                 />
               </div>
 

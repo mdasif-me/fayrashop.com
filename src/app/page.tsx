@@ -1,12 +1,20 @@
-import Banner from '@/components/layouts/view/banner'
+import Hero from '../components/container/hero'
+import Products from '../components/container/products'
+import Service from '../components/container/service'
 
 const Home = () => {
   return (
-    <div>
-      <div className="h-screen">
-        <div className="h-[200vh]"></div>
+    <section>
+      <div>
+        <Hero />
       </div>
-    </div>
+      <div>
+        <Service />
+      </div>
+      <div>
+        <Products />
+      </div>
+    </section>
   )
 }
 

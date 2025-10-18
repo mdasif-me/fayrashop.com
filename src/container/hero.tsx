@@ -7,11 +7,11 @@ import { Button } from '@/components/ui/button'
 import { Carousel, CarouselContent, CarouselItem, CarouselApi } from '@/components/ui/carousel'
 
 /**
- * PageHero is a hero section for the home page.
+ * Hero is a hero section for the home.
  * It contains a carousel of sales, a section for the top product of the summer, and a section for recommended products.
  * @returns {React.ReactElement} A hero section with a carousel and a couple of cards.
  */
-export default function PageHero(): React.ReactElement {
+export default function Hero(): React.ReactElement {
   const plugin = React.useRef(Autoplay({ delay: 4000, stopOnInteraction: true }))
   const [api, setApi] = React.useState<CarouselApi>()
   const [current, setCurrent] = React.useState(0)

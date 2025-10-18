@@ -1,9 +1,9 @@
-import { PageHero } from '@/container'
+import { Hero } from '@/container'
 
 const Home = () => {
   return (
     <div>
-      <PageHero />
+      <Hero />
     </div>
   )
 }

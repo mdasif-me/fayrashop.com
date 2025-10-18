@@ -1,1 +1,1 @@
-export { default as PageHero } from '@/container/page-hero'
+export { default as Hero } from '@/container/hero'

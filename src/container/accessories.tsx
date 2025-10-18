@@ -71,50 +71,18 @@ const products = [
   },
 ]
 
-export default function PuturesProduct() {
+export default function Accessories() {
   return (
     <section className="py-8">
       <div className="container mx-auto px-4 lg:px-0">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
-          <aside className="col-span-1 lg:col-span-3">
-            <div className="relative flex h-full flex-col justify-between overflow-hidden rounded shadow">
-              {/* === Top offer section === */}
-              <div className="bg-amber-200 p-6 text-center text-black">
-                <div className="text-sm font-medium uppercase">Computer & Accessories</div>
-                <h3 className="mt-2 text-4xl font-semibold">32% Discount</h3>
-                <p className="mt-3 text-sm">For all electronics products</p>
-
-                <div className="mt-4 flex items-center justify-center gap-3">
-                  <div className="text-sm">Offers ends in:</div>
-                  <p className="items-center gap-1 bg-white p-1.5 text-sm font-semibold">
-                    ENDS OF CHRISTMAS
-                  </p>
-                </div>
-
-                <button className="bg-primary mx-auto mt-8 flex items-center gap-2 rounded px-4 py-2 text-sm font-semibold text-white">
-                  SHOP NOW
-                  <ArrowRight className="h-4 w-4" />
-                </button>
-              </div>
-
-              {/* === Responsive Bottom Image === */}
-              <div className="relative flex w-full items-center justify-center">
-                <Image
-                  src="https://placehold.co/428x627.png"
-                  alt="promo banner"
-                  width={428}
-                  height={627}
-                  className="w-full object-contain"
-                />
-              </div>
-            </div>
-          </aside>
-
           <div className="col-span-1 flex flex-col gap-6 lg:col-span-9">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
-                <h2 className="text-2xl font-semibold">Featured Products</h2>
-                <p className="mt-1 text-sm text-gray-500">All the best deals and featured items</p>
+                <h2 className="text-2xl font-semibold">Computer Accessories</h2>
+                <p className="mt-1 text-sm text-gray-500">
+                  Discover top-rated accessories and exclusive deals
+                </p>
               </div>
 
               <div className="flex items-center gap-4">
@@ -135,6 +103,7 @@ export default function PuturesProduct() {
               </div>
             </div>
 
+            {/* Product Grid */}
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {products.map((item) => (
                 <Card
@@ -214,6 +183,58 @@ export default function PuturesProduct() {
               ))}
             </div>
           </div>
+
+          <aside className="col-span-1 h-full lg:col-span-3">
+            <div className="flex h-full flex-col gap-6">
+              <div className="flex flex-1 flex-col justify-between overflow-hidden rounded bg-amber-200 p-8 shadow">
+                <div className="relative mb-3 flex flex-1 items-center justify-center">
+                  <Image
+                    src="https://placehold.co/350x255.png"
+                    alt="Earbuds"
+                    width={350}
+                    height={250}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="text-center text-black">
+                  <div className="text-3xl font-semibold uppercase">
+                    Xiaomi True Wireless Earbuds
+                  </div>
+
+                  <p className="text-text-base mt-2 font-normal">
+                    Escape the noise, It’s time to hear the magic with Xiaomi Earbuds.
+                  </p>
+
+                  <div className="mt-4 flex items-center justify-center gap-3">
+                    <div className="text-sm">Only For:</div>
+                    <p className="items-center gap-1 bg-white p-1.5 text-sm font-semibold">
+                      $299 USD
+                    </p>
+                  </div>
+
+                  <button className="bg-primary mt-6 flex w-full items-center justify-center gap-2 rounded py-3.5 text-sm font-bold">
+                    SHOP NOW
+                    <ArrowRight className="h-4 w-4" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="bg-primary rounded p-6 text-center text-white">
+                <div className="mx-auto max-w-32 bg-white/10 p-2 text-sm font-semibold uppercase">
+                  SUMMER SALES
+                </div>
+                <h3 className="mt-3 text-3xl font-semibold tracking-wide">37% DISCOUNT</h3>
+                <p className="mt-3 text-lg font-normal">
+                  only for <span className="text-yellow-300">SmartPhone</span> product
+                </p>
+
+                <button className="mx-auto mt-6 flex items-center gap-2 rounded bg-blue-400 px-4 py-2 text-sm font-semibold">
+                  SHOP NOW
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </section>

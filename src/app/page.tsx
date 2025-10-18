@@ -1,10 +1,11 @@
-import { Hero, Service } from '@/container'
+import { Hero, Products, Service } from '@/container'
 
 const Home = () => {
   return (
     <div>
       <Hero />
       <Service />
+      <Products />
     </div>
   )
 }

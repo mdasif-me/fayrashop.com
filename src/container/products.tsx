@@ -127,7 +127,7 @@ export default function Products() {
                 </Button>
                 <button className="bg-primary flex flex-1 items-center justify-center gap-2 rounded-xs py-3 text-sm font-normal text-white">
                   <ShoppingCart className="h-5 w-5" />
-                  ADD TO CARD
+                  ADD TO CART
                 </button>
                 <Button className="rounded-xs border p-3">
                   <Eye className="h-5 w-5" />

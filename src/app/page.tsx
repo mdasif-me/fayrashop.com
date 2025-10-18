@@ -1,11 +1,11 @@
 import {
   Accessories,
+  FuturesProduct,
   Hero,
-  Macbook,
+  LargeProduct,
   Overall,
   Products,
   PromotionCard,
-  PuturesProduct,
   Service,
 } from '@/container'
 import Category from '../container/category'
@@ -17,10 +17,10 @@ const Home = () => {
       <Service />
       <Products />
       <Category />
-      <PuturesProduct />
+      <FuturesProduct />
       <PromotionCard />
       <Accessories />
-      <Macbook />
+      <LargeProduct />
       <Overall />
     </div>
   )

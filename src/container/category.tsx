@@ -32,7 +32,7 @@ export default function Category() {
   )
 
   return (
-    <section className="container mx-auto px-4 py-10">
+    <section className="container mx-auto px-4 py-10 lg:px-0">
       <div className="mb-6 text-center">
         <h2 className="text-3xl font-semibold">Shop with Categorys</h2>
       </div>

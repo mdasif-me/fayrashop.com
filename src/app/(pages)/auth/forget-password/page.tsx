@@ -12,9 +12,6 @@ import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
 const ForgetPassword = () => {
-  const search = useSearchParams()
-  const token = search.get('token') || ''
-
   const {
     handleSubmit,
     control,

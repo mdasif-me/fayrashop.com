@@ -7,6 +7,7 @@ import { TextField } from '@/components/ui/text-field'
 import { Button } from '@/components/ui/button'
 import { IconArrowRight } from '@intentui/icons'
 import { loginSchema, type LoginSchemaType } from '../schema'
+import Link from 'next/link'
 
 const Login = () => {
   const {
@@ -52,7 +53,15 @@ const Login = () => {
               {...field}
               isRevealable
               isRequired
-              label="Password"
+              label={'Password'}
+              endLabel={
+                <Link
+                  href="/auth/forget-password"
+                  className="text-primary text-sm underline-offset-2 hover:underline"
+                >
+                  Forgot Password?
+                </Link>
+              }
               type="password"
               placeholder="Enter your password"
               isInvalid={!!errors.password}
@@ -61,6 +70,7 @@ const Login = () => {
           )}
         />
       </div>
+
       <Button type="submit" className={`w-full uppercase`}>
         Sign in
         <IconArrowRight className="shrink-0 !text-white" />

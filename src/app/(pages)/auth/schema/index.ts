@@ -77,3 +77,13 @@ export const resetPasswordSchema = z
   })
 
 export type ResetPasswordSchemaType = z.infer<typeof resetPasswordSchema>
+
+export const forgetPasswordSchema = z.object({
+  email: z
+    .string()
+    .email({ message: 'Invalid email address' })
+    .min(6, { message: 'Email is required' })
+    .max(100, { message: 'Email must be less than 100 characters' }),
+})
+
+export type ForgetPasswordSchemaType = z.infer<typeof forgetPasswordSchema>

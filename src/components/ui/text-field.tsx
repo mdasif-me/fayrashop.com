@@ -15,6 +15,7 @@ interface BaseTextFieldProps extends TextFieldPrimitiveProps, FieldProps {
   prefix?: React.ReactNode | string
   suffix?: React.ReactNode | string
   isPending?: boolean
+  endLabel?: React.ReactNode | string
 }
 
 type TextFieldProps =
@@ -24,6 +25,7 @@ type TextFieldProps =
 const TextField = ({
   placeholder,
   label,
+  endLabel,
   description,
   errorMessage,
   prefix,
@@ -47,7 +49,14 @@ const TextField = ({
     >
       {!props.children ? (
         <>
-          {label && <Label>{label}</Label>}
+          {endLabel ? (
+            <article className="flex items-center justify-between">
+              {label && <Label>{label}</Label>}
+              <Label>{endLabel}</Label>
+            </article>
+          ) : (
+            label && <Label>{label}</Label>
+          )}
           <FieldGroup
             isDisabled={props.isDisabled}
             isInvalid={!!errorMessage}

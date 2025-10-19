@@ -4,7 +4,7 @@ import React from 'react'
 export default function LargeProduct() {
   return (
     <section className="py-10">
-      <div className="flex h-auto w-full flex-col items-center justify-around gap-5 rounded-xl bg-orange-100 shadow-sm lg:flex-row lg:gap-0">
+      <div className="flex h-auto w-full flex-col items-center justify-around gap-5 rounded-xl bg-orange-300 shadow-sm lg:flex-row lg:gap-0">
         <div className="max-w-sm flex-1 pt-5 text-center text-black lg:pt-0 lg:text-left">
           <span className="inline-block rounded bg-blue-400 px-2 py-1 text-sm font-semibold text-white uppercase">
             SAVE UP TO $200.00

@@ -112,4 +112,20 @@
     background: var(--border);
     border-radius: 4px;
   }
+
+  /* webkit for autofill default theme color */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-text-fill-color: var(--color-fg) !important;
+    background-clip: text !important;
+  }
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  textarea:-webkit-autofill:active {
+    -webkit-text-fill-color: var(--color-fg) !important;
+    background-clip: text !important;
+  }
 }

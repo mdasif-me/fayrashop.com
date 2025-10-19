@@ -16,7 +16,6 @@ const ForgetPassword = () => {
             diam.
           </p>
         </div>
-
         <div className="relative mb-4 flex w-full flex-col gap-2">
           <div className="flex items-center justify-between">
             <Label>Verification Code</Label>

@@ -1,8 +1,10 @@
+'use client'
+
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Form } from '../../../../components/ui/form'
-import { TextField } from '../../../../components/ui/text-field'
-import { Button } from '../../../../components/ui/button'
+import { Form } from '@/components/ui/form'
+import { TextField } from '@/components/ui/text-field'
+import { Button } from '@/components/ui/button'
 import { IconArrowRight } from '@intentui/icons'
 import { loginSchema, type LoginSchemaType } from '../schema'
 

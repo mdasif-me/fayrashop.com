@@ -1,14 +1,16 @@
+'use client'
+
 import { Controller, useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { Form } from '../../../../components/ui/form'
-import { TextField } from '../../../../components/ui/text-field'
-import { Button } from '../../../../components/ui/button'
-import { IconArrowRight } from '@intentui/icons'
 import { registerSchema, RegisterType } from '../schema'
+import { zodResolver } from '@hookform/resolvers/zod'
 import { ERole } from '../enum'
+import { Form } from '@/components/ui/form'
+import { TextField } from '@/components/ui/text-field'
 import { Checkbox } from '@/components/ui/checkbox'
+import { Description } from '@/components/ui/field'
 import Link from 'next/link'
-import { Description } from '../../../../components/ui/field'
+import { Button } from '@/components/ui/button'
+import { IconArrowRight } from '@intentui/icons'
 
 const Register = () => {
   const {
@@ -74,7 +76,7 @@ const Register = () => {
               isRequired
               label="Password"
               type="password"
-              placeholder="Enter your password"
+              placeholder="8+ characters, mix of letters, numbers & symbols"
               isInvalid={!!errors.password}
               errorMessage={errors.password?.message}
             />
